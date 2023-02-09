@@ -54,7 +54,7 @@ sudo npm install tar@latest -g
 export NODE_OPTIONS=--max-old-space-size=512
 ```
 
-You should add the `export` command to your .bashrc file so that it is set during each session.
+You should add the `export` command to your `.bashrc` file so that it is set during each session.
 
 ## Install Angular
 ```
