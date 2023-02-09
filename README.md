@@ -39,8 +39,8 @@ git config --global user.name "Firstname Lastname"
 ```
 sudo dphys-swapfile swapoff
 sudo nano /etc/dphys-swapfile
-- Find the `CONF_SWAPSIZE` line
-- Change it to read: `CONF_SWAPSIZE=2048`
+- Find the 'CONF_SWAPSIZE' line
+- Change it to read: 'CONF_SWAPSIZE=2048'
 sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 sudo swapon --show
