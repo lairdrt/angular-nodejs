@@ -26,6 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+...
+
 # Installing Node.js and Angular on a Raspberry Pi Zero 2 W
 
 Installing and using Node.js and Angular on a very resource-constrained microcomputer such as the [Raspberry Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) requires optimizing memory usage so that the build/deploy chain does not cause the OS to kill processes that exhaust available resources.
