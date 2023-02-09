@@ -70,6 +70,8 @@ See also: https://angular.io/cli/serve
 
 # AngularTourOfHeroes
 
+[The tutorial is located here.](https://angular.io/tutorial/tour-of-heroes)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
 ## Development server
