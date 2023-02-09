@@ -34,7 +34,6 @@ sudo apt-get -y install git
 git config --global user.email "your.email@address"
 git config --global user.name "Firstname Lastname"
 ```
-
 ## Increase Swap Space (Linux kills processes that stress memory)
 
 ```
@@ -46,7 +45,6 @@ sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 sudo swapon --show
 ```
-
 ## Install Node.js
 
 ```
@@ -55,7 +53,6 @@ sudo apt-get install -y nodejs
 sudo npm install npm@latest -g
 sudo npm install tar@latest -g
 ```
-
 ## Install Angular
 
 ```
