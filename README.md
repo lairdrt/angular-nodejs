@@ -51,7 +51,10 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install npm@latest -g
 sudo npm install tar@latest -g
+export NODE_OPTIONS=--max-old-space-size=512
 ```
+
+You should add the `export` command to your .bashrc file so that it is set during each session.
 
 ## Install Angular
 ```
