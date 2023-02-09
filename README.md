@@ -18,7 +18,7 @@ The following describes the steps required to install and successfully use both 
 
 **Angular:** 15.1.3
 
-Note that you must use an even numbered version (e.g., 18.x) of Node.js when building with Angular.
+Note that you must use an even numbered version (e.g., 18.x LTS) of Node.js when building with Angular.
 
 ## Start State
 
