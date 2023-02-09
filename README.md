@@ -61,7 +61,7 @@ ng version
 
 ## Running the Angular Test Server at a Specific IP/Port
 ```
-ng serve --host 192.168.1.50 --port 4000
+[ng serve --host 192.168.1.50 --port 4000](https://angular.io/cli/serve)
 ```
 
 <hr>
