@@ -25,7 +25,6 @@ Note that you must use an even numbered version (e.g., 18.x) of Node.js when bui
 We're assuming a freshly built Raspberry Pi OS image, just booted for the first time.
 
 ## Update OS and Install Tools
-
 ```
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -34,8 +33,8 @@ sudo apt-get -y install git
 git config --global user.email "your.email@address"
 git config --global user.name "Firstname Lastname"
 ```
-## Increase Swap Space (Linux kills processes that stress memory)
 
+## Increase Swap Space (Linux kills processes that stress memory)
 ```
 sudo dphys-swapfile swapoff
 sudo nano /etc/dphys-swapfile
@@ -45,18 +44,24 @@ sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 sudo swapon --show
 ```
-## Install Node.js
 
+## Install Node.js
 ```
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install npm@latest -g
 sudo npm install tar@latest -g
 ```
-## Install Angular
 
+## Install Angular
 ```
 sudo npm install @angular/cli -g
+ng version
+```
+
+## Running the Angular Test Server at a Specific IP/Port
+```
+ng serve --host 192.168.1.50 --port 4000
 ```
 
 <hr>
