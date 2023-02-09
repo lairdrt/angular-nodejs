@@ -18,6 +18,34 @@ The following describes the steps required to install and successfully use both 
 
 **Angular:** 15.1.3
 
+Note that you must use an even numbered version (e.g., 18.x) of Node.js when building with Angular.
+
+## Start State
+
+We're assuming a freshly built Raspberry Pi OS image, just booted for the first time.
+
+## Update OS and Install Tools
+
+```
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install build-essential
+sudo apt-get -y install git
+git config --global user.email "your.email@address"
+git config --global user.name "Firstname Lastname"
+```
+
+## Increase Swap Space (Linux kills processes that stress memory)
+
+```
+sudo dphys-swapfile swapoff
+sudo nano /etc/dphys-swapfile
+  CONF_SWAPSIZE=2048
+sudo dphys-swapfile setup
+sudo dphys-swapfile swapon
+sudo swapon --show
+```
+
 <hr>
 
 # AngularTourOfHeroes
