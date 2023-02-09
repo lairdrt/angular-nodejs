@@ -2,7 +2,7 @@
 
 Installing and using [Node.js](https://nodejs.org/en/) and [Angular](https://angular.io/) on a very resource-constrained microcomputer such as the [Raspberry Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) requires optimizing memory usage so that the build/deploy chain does not cause the OS to kill processes that tend to exhaust available resources.
 
-The following describes the steps required to install and successfully use both Node.js and Angular to build viable applications on a Raspberry Pi. The tutorial below was completed successfully using the Raspberry Pi Zero 2 W (having 512MB RAM) with the OS configured as given below.
+The following describes the steps required to install and successfully use both Node.js and Angular to build viable applications on a Raspberry Pi Zero 2 W having only 512MB RAM. The tutorial below was completed successfully using the Raspberry Pi Zero 2 W with the OS configured as given below.
 
 ## Version Information
 
@@ -40,10 +40,26 @@ git config --global user.name "Firstname Lastname"
 ```
 sudo dphys-swapfile swapoff
 sudo nano /etc/dphys-swapfile
-  CONF_SWAPSIZE=2048
+- Find the `CONF_SWAPSIZE` line
+- Change it to read: `CONF_SWAPSIZE=2048`
 sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 sudo swapon --show
+```
+
+## Install Node.js
+
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install npm@latest -g
+sudo npm install tar@latest -g
+```
+
+## Install Angular
+
+```
+sudo npm install @angular/cli -g
 ```
 
 <hr>
