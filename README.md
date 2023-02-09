@@ -7,10 +7,15 @@ The following describes the steps required to install and successfully use both 
 ## Version Information
 
 **Target hardware:** Raspberry Pi Zero 2 W
++
 **Target OS:** Raspbian GNU/Linux 11 (bullseye)
++
 **Angular CLI:** 15.1.4
++
 **Node:** 18.14.0
++
 **Package Manager:** npm 9.4.1
++
 **Angular:** 15.1.3
 
 <hr>
