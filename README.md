@@ -64,7 +64,7 @@ ng version
 ng serve --host 192.168.1.50 --port 4000
 ```
 
-See also: [https://angular.io/cli/serve]
+See also: https://angular.io/cli/serve
 
 <hr>
 
