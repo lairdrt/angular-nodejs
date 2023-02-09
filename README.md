@@ -69,6 +69,10 @@ ng serve --host 192.168.1.50 --port 4000
 
 See also: https://angular.io/cli/serve
 
+## End State
+
+Your Raspberry Pi should now be able to build and deploy an Angular application (on a test server). You should also be able to fully execute the tutorial below.
+
 <hr>
 
 # AngularTourOfHeroes
