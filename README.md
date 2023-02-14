@@ -26,10 +26,10 @@ We're assuming a freshly built Raspberry Pi OS image, just booted for the first 
 
 ## Update OS and Install Tools
 ```
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install build-essential
-sudo apt-get -y install git
+sudo apt -y update
+sudo apt -y upgrade
+sudo apt -y install build-essential
+sudo apt -y install git
 git config --global user.email "your.email@address"
 git config --global user.name "Firstname Lastname"
 ```
@@ -48,7 +48,7 @@ sudo swapon --show
 ## Install Node.js
 ```
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
 sudo npm install npm@latest -g
 sudo npm install tar@latest -g
 export NODE_OPTIONS=--max-old-space-size=512
